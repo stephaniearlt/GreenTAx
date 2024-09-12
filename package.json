@@ -1,0 +1,11 @@
+{
+  "name": "greentax",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purify": "purify-css 'src/**/*.html' 'src/**/*.js' 'src/styles.css' --out 'src/cleaned-style.css'"
+  },
+  "devDependencies": {
+    "purify-css": "^1.2.5"
+  }
+}

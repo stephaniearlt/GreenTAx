@@ -1,0 +1,6 @@
+# Generated directories and files
+node_modules/
+package-lock.json
+
+# VSCode specific configuration
+.vscode/

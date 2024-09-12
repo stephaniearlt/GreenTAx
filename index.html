@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>GreenTax</title>
+    <meta
+      name="description"
+      content="GreenTax, site de démonstration pour cabinet comptable"
+    />
+    <meta
+      name="author"
+      content="Stéphanie Arlt, développeuse web indépendante"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/style.min.css" />
+  </head>
+
+  <body id="top" class="ss-preload theme-particles">
+    <!-- preloader ================================================== -->
+    <div
+      id="preloader"
+      role="progressbar"
+      aria-label="Chargement de la page"
+    ></div>
+
+    <!-- intro ================================================== -->
+    <section id="intro" class="s-intro">
+      <div
+        id="particles-js"
+        class="s-intro__particles"
+        role="banner"
+        aria-label="Fond d'écran animé"
+      ></div>
+
+      <header class="s-intro__header">
+        <div class="s-intro__logo">
+          <a href="index.html" aria-label="Retour à la page d'accueil"
+            >GREENTAX</a
+          >
+        </div>
+      </header>
+
+      <div class="row s-intro__content">
+        <div class="column">
+          <div class="text-pretitle">Enchanté de vous rencontrer.</div>
+
+          <p class="text-huge-title">
+            Nous nous engageons à <br />
+            bâtir des relations commerciales durables <br />
+            en mettant le client au cœur de notre approche.
+          </p>
+        </div>
+      </div>
+
+      <div class="s-intro__notify">
+        <button
+          type="button"
+          class="btn--stroke btn--small ss-modal-trigger"
+          aria-expanded="false"
+        >
+          Espace Membre
+        </button>
+      </div>
+
+      <div hidden class="s-intro__modal ss-modal" aria-hidden="true">
+        <div
+          class="ss-modal__inner"
+          role="dialog"
+          aria-labelledby="modal-title"
+          aria-describedby="modal-description"
+        >
+          <span
+            class="ss-modal__close"
+            role="button"
+            aria-label="Fermer la fenêtre"
+          ></span>
+
+          <h1 id="modal-title">Se connecter</h1>
+
+          <p id="modal-description" class="ss-modal__text">
+            Cette modale vous montre les fonctionnalités que la conceptrice du
+            site peut développer. Cliquez sur le bouton ci-dessous pour en
+            savoir plus sur ses offres destinées à améliorer la gestion des
+            finances et processus comptables.
+          </p>
+
+          <form id="demo-form" class="mc-form" action="demo.html">
+            <input
+              type="submit"
+              value="Se connecter"
+              class="btn--small btn--primary u-fullwidth"
+            />
+            <div class="mc-status"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="s-intro__scroll">
+        <a
+          href="#hidden"
+          class="smoothscroll"
+          aria-label="Voir plus d’informations"
+          >Plus d’infos</a
+        >
+      </div>
+    </section>
+
+    <!-- hidden element ================================================== -->
+    <div id="hidden" aria-hidden="true" style="opacity: 0"></div>
+
+    <!-- details ================================================== -->
+    <section id="details" class="s-details">
+      <div class="row">
+        <div class="column">
+          <h1 class="text-huge-title text-center">
+            Bonjour, Nous sommes GreenTax.
+          </h1>
+
+          <nav
+            class="tab-nav"
+            role="navigation"
+            aria-label="Navigation des onglets"
+          >
+            <ul class="tab-nav__list" role="tablist">
+              <li role="presentation">
+                <a
+                  href="#tab-about"
+                  id="tab-link-0"
+                  role="tab"
+                  aria-controls="tab-about"
+                  aria-selected="true"
+                  tabindex="0"
+                >
+                  <span>À propos</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="#tab-services"
+                  id="tab-link-1"
+                  role="tab"
+                  aria-controls="tab-services"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  <span>Services</span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="#tab-contact"
+                  id="tab-link-2"
+                  role="tab"
+                  aria-controls="tab-contact"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  <span>Contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tab-content">
+            <!-- 01 - tab about -->
+            <div
+              d="tab-about"
+              class="tab-content__item"
+              role="tabpanel"
+              aria-labelledby="tab-link-0"
+              aria-hidden="false"
+            >
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h2>Notre histoire.</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    <strong>
+                      Chez GreenTax, nous croyons que chaque entreprise mérite
+                      une stratégie fiscale solide et un accompagnement sur
+                      mesure.
+                    </strong>
+                  </p>
+
+                  <p>
+                    Nous avons constaté un manque flagrant de planification
+                    fiscale adaptée aux entreprises locales et régionales. Trop
+                    souvent, les propriétaires d'entreprise se sentent
+                    délaissés, ne recevant pas l'attention et les soins qu'ils
+                    méritent. C'est là que nous intervenons.
+                  </p>
+
+                  <p>
+                    <strong>Notre mission est simple</strong> : nous devenons
+                    une partie intégrante de votre entreprise, vos conseillers
+                    fiscaux de confiance, présents à chaque étape de votre
+                    parcours. Pendant que vous vous consacrez à faire croître
+                    votre entreprise, nous nous occupons de toutes les questions
+                    de conformité fiscale et de comptabilité.
+                  </p>
+
+                  <p>
+                    Mais qu'en est-il des individus qui n'ont pas encore créé
+                    leur entreprise ou qui jonglent avec plusieurs activités
+                    professionnelles ? <strong>Chez GreenTax</strong>, nous leur
+                    réservons une attention toute particulière. Que vous ayez un
+                    emploi stable, une activité annexe ou que vous soyez en
+                    pleine réflexion sur un nouveau projet, nous vous aidons à
+                    naviguer dans le dédale fiscal. Nous savons que chaque
+                    situation est unique, et c'est pourquoi nous offrons un
+                    service client d'excellence, combiné à une planification
+                    fiscale minutieuse.
+                  </p>
+
+                  <p>
+                    <strong>
+                      Nous ne prétendons pas tout faire, mais ce que nous
+                      faisons, nous le faisons avec rigueur et passion</strong
+                    >. Parce que votre succès est aussi le nôtre.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 - tab services -->
+            <div
+              id="tab-services"
+              class="tab-content__item"
+              role="tabpanel"
+              aria-labelledby="tab-link-1"
+              aria-hidden="true"
+            >
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h2>Ce que nous faisons.</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    <strong>
+                      Chez GreenTax, nous savons que chaque client est unique,
+                      avec des besoins spécifiques qui méritent une attention
+                      particulière. Le monde des impôts peut parfois sembler
+                      labyrinthique, complexe et intimidant. C'est pourquoi nous
+                      adoptons une approche personnalisée, créant pour vous une
+                      stratégie fiscale sur mesure, adaptée à votre situation et
+                      à vos objectifs.
+                    </strong>
+                  </p>
+
+                  <p>
+                    Nous ne cherchons pas simplement à remplir des formulaires
+                    ou à cocher des cases. Nous construisons un véritable
+                    partenariat avec vous, basé sur la transparence, l'honnêteté
+                    et une communication proactive. Chez nous, il ne s'agit pas
+                    d'une simple transaction, mais d'une relation durable, où
+                    vos intérêts deviennent notre priorité absolue. Ensemble,
+                    nous voulons célébrer vos réussites et surmonter les défis
+                    tout au long de votre parcours.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="row services-list block-lg-one-half block-md-one-half block-tab-whole"
+                role="list"
+                aria-label="Liste des services"
+              >
+                <div class="column services-list__item" role="listitem">
+                  <div class="services-list__item-content">
+                    <h3 class="item-title">Conformité fiscale</h3>
+                    <p>
+                      Nous savons que la conformité fiscale est la base de toute
+                      entreprise prospère. Mais pour nous, il ne s'agit pas
+                      seulement de respecter les règles. Nous veillons à ce que
+                      chaque déclaration, chaque chiffre soit exact, en temps
+                      voulu et en toute tranquillité d'esprit. Notre équipe se
+                      charge de toutes les formalités administratives, vous
+                      libérant ainsi du fardeau des obligations fiscales. Vous
+                      pouvez ainsi vous concentrer sur ce qui compte vraiment :
+                      développer votre entreprise.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item" role="listitem">
+                  <div class="services-list__item-content">
+                    <h3 class="item-title">Conseil fiscal</h3>
+                    <p>
+                      Le monde des affaires évolue rapidement, et les lois
+                      fiscales ne font pas exception. Avec notre service de
+                      conseil fiscal, nous ne nous contentons pas de vous offrir
+                      des conseils ponctuels. Nous vous accompagnons à chaque
+                      étape de votre croissance, en anticipant les opportunités
+                      et les défis, pour vous aider à prendre les meilleures
+                      décisions. Parce qu'un bon conseil fiscal ne se limite pas
+                      à aujourd'hui, mais prépare aussi votre avenir.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item" role="listitem">
+                  <div class="services-list__item-content">
+                    <h3 class="item-title">Représentation fiscale</h3>
+                    <p>
+                      Personne n'aime recevoir un appel ou un courrier de
+                      l'administration fiscale. C'est pourquoi nous sommes là
+                      pour vous représenter en toute circonstance. Que ce soit
+                      lors d'un contrôle fiscal ou pour répondre à des questions
+                      complexes, nous faisons face pour vous, avec expertise et
+                      assurance. Vous pouvez compter sur nous pour défendre vos
+                      intérêts avec rigueur et professionnalisme, vous offrant
+                      ainsi la sérénité dont vous avez besoin pour continuer à
+                      avancer.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column services-list__item" role="listitem">
+                  <div class="services-list__item-content">
+                    <h3 class="item-title">Soutien aux entreprises</h3>
+                    <p>
+                      Une entreprise prospère repose sur des bases solides.
+                      Au-delà des chiffres et des impôts, nous vous aidons à
+                      structurer et à optimiser votre activité. De la création
+                      d'entreprise à l'expansion, en passant par la gestion
+                      quotidienne, nous vous apportons le soutien nécessaire
+                      pour que chaque décision soit éclairée et chaque stratégie
+                      bien pensée. Nous devenons vos partenaires de confiance,
+                      dédiés à la réussite et à la pérennité de votre
+                      entreprise.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 - tab contact -->
+            <div
+              id="tab-contact"
+              class="tab-content__item"
+              role="tabpanel"
+              aria-labelledby="tab-link-2"
+              aria-hidden="true"
+            >
+              <div class="row tab-content__item-header">
+                <div class="column">
+                  <h2>Prenez contact avec nous.</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <p class="lead">
+                    <strong>
+                      Chez GreenTax, nous croyons que la transparence est
+                      essentielle. Nous savons à quel point il est important
+                      pour vous de comprendre les coûts avant de vous engager.
+                      C'est pourquoi nous nous engageons à vous fournir des
+                      informations claires et précises.
+                    </strong>
+                  </p>
+
+                  <p>
+                    Cependant, chaque situation, qu'elle soit personnelle ou
+                    professionnelle, est unique. Pour vous offrir un devis qui
+                    reflète fidèlement vos besoins, nous souhaitons d'abord en
+                    savoir plus sur vous et sur vos objectifs. Prenons le temps
+                    d'échanger afin de vous proposer une solution parfaitement
+                    adaptée.
+                  </p>
+
+                  <p>
+                    Contactez-nous dès aujourd'hui pour discuter de votre
+                    situation et recevoir un devis personnalisé, sans
+                    engagement. Ensemble, trouvons la solution qui vous convient
+                    le mieux.
+                  </p>
+
+                  <p class="tab-content__item-bottom">
+                    <a
+                      href="mailto:contact@stephaniearlt.fr?subject=Demande%20de%20prestation%20pour%20modernisation/cr%C3%A9ation%20de%20pr%C3%A9sence%20en%20ligne&body=Bonjour,%0D%0A%0D%0ACe%20site%20m'a%20plu,%20je%20cherche%20un%20prestataire%20ind%C3%A9pendant%20pour%20moderniser%20/%20cr%C3%A9er%20ma%20pr%C3%A9sence%20en%20ligne.%20Pouvez-vous%20me%20recontacter%20pour%20en%20discuter%20?%0D%0A%0D%0AMerci."
+                      class="contact-email"
+                      aria-label="Envoyer un email à contact@stephaniearlt.fr"
+                    >
+                      contact@stephaniearlt.fr
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="ss-go-top">
+        <a
+          class="smoothscroll"
+          title="Revenir en haut"
+          href="#top"
+          aria-label="Revenir en haut de la page"
+        >
+          <span>Revenir en haut</span>
+          <svg
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+          >
+            <path
+              d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer role="contentinfo">
+      <div class="ss-copyright">
+        <span>GreenTax 2024</span>
+        <span>Site de démonstration</span>
+        <span class="by"
+          >Réalisé par
+          <a
+            href="https://stephaniearlt.fr/"
+            aria-label="Visiter le site de Stéphanie Arlt"
+            >Stéphanie Arlt</a
+          >
+        </span>
+      </div>
+    </footer>
+
+    <!-- JavaScript ================================================== -->
+    <script src="./src/main.js" defer></script>
+    <script src="./src/particles.min.js" defer></script>
+    <script src="./src/particle-settings.js" defer></script>
+  </body>
+</html>
